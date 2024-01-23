@@ -1,0 +1,58 @@
+HTML FORMATTING
+    - You can add style to an element by specifying it in the style element and setting a property for it like this:
+        element {
+            property: value;
+        }
+
+    - For the styling of the page to look similar on mobile as it does on a desktop or laptop, you need to add a meta element with a special content attribute.
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    - The div element is used mainly for design layout purposes unlike the other content elements you have used so far. 
+    
+    - The <article> element is used to represent a self-contained piece of content that could be distributed and reused independently, such as a news article, blog post, or forum post.
+    article elements commonly contain multiple elements that have related information.
+
+    - The <section> element is a generic container used to group related content together. It is often used to divide a web page into sections or chapters, and each section can have its own heading.
+
+    - You can use an hr element to display a divider between sections of different content.
+
+
+CSS
+    - You can use the id selector to target a specific element with an id attribute. An id selector is defined by placing the hash symbol # directly in front of the element's id value. For example, if an element has the id of cat then you would target that element like this:
+        #cat {
+        width: 250px;
+        }
+
+    comments:
+        - Comments in CSS look like this:
+            /* comment here */
+
+    - A class selector is defined by a name with a dot directly in front of it, like this:
+
+        .class-name {
+        styles
+        }
+        Change the existing #menu selector into a class selector by replacing #menu with a class named .menu.
+
+    - The p elements are nested in an article element with the class attribute of item. You can style all the p elements nested anywhere in elements with a class named item like this:
+        .item p { }
+
+    - You can give your menu some space between the content and the sides with various padding properties.
+    - The current width of the menu will always take up 80% of the body element's width. On a very wide screen, the coffee and dessert appear far apart from their prices.
+        Add a max-width property to the menu class with a value of 500px to prevent it from growing too wide.
+
+    - You can change the font-family of text, to make it look different from the default font of your browser. Each browser has some common fonts available to it.
+        Change all the text in your body, by adding a font-family property with the value sans-serif. This is a fairly common font that is very readable.
+    - You can add a fallback value for the font-family by adding another font name separated by a comma. Fallbacks are used in instances where the initial is not found/available.
+
+    - Make the Est. 2020 text italicized by creating an established class selector and giving it the font-style property with the value italic.
+
+    LINK COLORS
+    - You change properties of a link when the link has actually been visited by using a pseudo-selector that looks like a:visited { propertyName: propertyValue; }.
+    - You change properties of a link when the mouse hovers over them by using a pseudo-selector that looks like a:hover { propertyName: propertyValue; }.
+    - You change properties of a link when the link is actually being clicked by using a pseudo-selector that looks like a:active { propertyName: propertyValue; }.
+
+    IMAGES:
+    - To make the image behave like heading elements (which are block-level), create an img type selector and use the value block for the display property and use the applicable margin-left and margin-right values to center it horizontally.
+
+
